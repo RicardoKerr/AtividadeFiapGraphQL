@@ -1,3 +1,4 @@
-type Query {
-  produto: [Produto]
-}
+  type Query{
+      produto:Produto
+      cliente:Cliente
+    }
