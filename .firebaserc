@@ -1,6 +1,6 @@
 {
   "projects": {
-    "default": "fiapbancographql",
+    "default": "AtividadeFiapGraphQL",
     "atividadefinal": "fiapkerrbanco"
   }
 }
