@@ -5,6 +5,9 @@ const admin = require('firebase-admin');
 
 const serviceAccount = require('./fiapkerrbanco-firebase-adminsdk-auuyk-3df7654617.json');
 
+const resolvers = require("./resolvers");
+const { importSchema } = require("graphql-import");
+
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
     databaseURL: "https://fiapkerrbanco-default-rtdb.firebaseio.com/"
