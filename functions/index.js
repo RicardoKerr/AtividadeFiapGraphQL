@@ -20,7 +20,7 @@ const typeDefs = gql`
         datacadastro:String
     }
     type Query{
-        produto:produto
+        produto:[produto]
     }
     type Mutation{
         novoproduto(
@@ -30,7 +30,7 @@ const typeDefs = gql`
             fornecedor:String
             preco:Float
             datacadastro:String
-        ):produto
+        ):[produto]
     }
 `
 const resolvers = {
@@ -38,11 +38,11 @@ const resolvers = {
         produto(){
             return admin
                     .database()
-                    .ref("produto")
-                    .once("values")
+                    .ref("produtos")
+                    .once("value")
                     .then(snap => snap.val())
-                    .then(val => Object.keys(val))
-                    .map((key)=>val[key])
+                    .then(val => Object.keys(val)
+                    .map((key)=>val[key]))
              }
          },
         
@@ -56,14 +56,15 @@ const resolvers = {
                 preco:preco,
                 datacadastro:datacadastro
             }
-            return admin.database()
-            .ref("produto")
-            .push(novo)
-            .then(snap => snap.val())
-            .then(val => Object.keys(val))
-            .map((key)=>val[key])
+            return admin
+                .database()
+                .ref("produtos")
+                .push(novo)
+                .then(snap => snap.val())
+                .then(val => Object.keys(val)
+                .map((key)=>val[key]))
+            }
         }
-    }
 }
 
 const app = express()
