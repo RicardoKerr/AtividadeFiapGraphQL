@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"nodemon"
+    "start": "nodemon"
   },
   "keywords": [],
   "author": "",
@@ -30,6 +30,8 @@
     "url": "https://github.com/RicardoKerr/AtividadeFiapGraphQL/issues"
   },
   "homepage": "https://github.com/RicardoKerr/AtividadeFiapGraphQL#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
   "description": ""
 }

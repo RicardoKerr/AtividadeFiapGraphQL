@@ -9,17 +9,10 @@ const typeDefs = gql`
         preco:Float
         datacadastro:String       
     }
+
     type Query{
         produto:Produto
-
-
     }
-    type Mutation{
-
-
-
-    }
-
 `
 const resolvers = {
     Query:{
@@ -33,6 +26,7 @@ const resolvers = {
                 datacadastro:"15/12/2020"
             }
         }
+    }
 
 }
 
