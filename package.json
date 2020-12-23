@@ -12,13 +12,17 @@
   "dependencies": {
     "-": "0.0.1",
     "apollo-server": "^2.19.1",
-    "apollo-server-express": "^2.19.0",
+    "apollo-server-express": "^2.19.1",
     "express": "^4.17.1",
     "firebase": "^8.2.1",
+    "firebase-admin": "^9.4.2",
+    "firebase-functions": "^3.13.0",
     "firebase-tools": "^9.1.0",
     "graphql": "^15.4.0",
     "graphql-import": "^1.0.2",
     "graphql-tools": "^7.0.2",
+    "node12": "0.0.0",
+    "nodejs": "0.0.0",
     "sabe": "^1.0.0",
     "save": "^2.4.0"
   },

@@ -1,0 +1,28 @@
+{
+    "produtos": [ 
+        {
+        "id":1,
+        "nomeproduto":"Teclado",
+        "descricao":"Teclado sem fio",
+        "fornecedor":"Dell",
+        "preco":150.50,
+        "datacadastro":"14/12/2020"
+    },
+    {
+        "id":2,
+        "nomeproduto":"Mouse",
+        "descricao":"Mouse sem fio",
+        "fornecedor":"Dell",
+        "preco":50.90,
+        "datacadastro":"14/12/2020"
+    },
+    {
+        "id":3,
+        "nomeproduto":"Monitor",
+        "descricao":"Monitor 24 polegadas",
+        "fornecedor":"Dell",
+        "preco":950.89,
+        "datacadastro":"14/12/2020"
+    }
+]
+}
