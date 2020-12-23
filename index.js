@@ -10,8 +10,14 @@ const typeDefs = gql`
         datacadastro:String       
     }
 
+    type Cliente{
+        id:Int
+        nomecliente:String
+    }
+
     type Query{
         produto:Produto
+        cliente:Cliente
     }
 `
 const resolvers = {
@@ -25,9 +31,14 @@ const resolvers = {
                 preco:100.00,
                 datacadastro:"15/12/2020"
             }
+        },
+        cliente(){
+            return{
+                id:12,
+                nomecliente:"Marcos"
+            }
         }
     }
-
 }
 
 const server = new ApolloServer({
